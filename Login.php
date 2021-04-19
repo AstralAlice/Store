@@ -8,13 +8,13 @@
 <body>
 <form action="Login.php" method="post">
     <label for="username">Username</label>
-    <input type="text" placeholder="Type Here" name="username">
+    <input type="text" placeholder="Type Here" name="username"><br>
 
     <label for="password">Password</label>
-    <input type="password" placeholder="Type Here" name="password">
+    <input type="password" placeholder="Type Here" name="password"><br>
 
-    <label for="submit">Submit</label>
-    <input type="submit" name="submit">
+
+    <input type="submit" value="login" name="submit">
 
 
 </form>
