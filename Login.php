@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<?php session_start(); ?>
 
 <head>
 
@@ -18,6 +18,19 @@
 
 
 </form>
+<?php
+    if(isset($_REQUEST["err"]))
+        $msg="Invalid Username or Password";
+    if (isset($msg)) echo$msg;
+
+    if (isset($_REQUEST["submit"])){
+        $usname = $_REQUEST['username'];
+        $uspassword = $_REQUEST['password'];
+
+        include_once "php/user.php";
+        $user = new user();
+        $user->loginQuery($usname, $uspassword);
+    }?>
 
 
 </body>
