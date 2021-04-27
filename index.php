@@ -12,14 +12,16 @@ if(!isset($_SESSION["loggedin"]))
 
 </head>
 <body>
+
 <?php
 require 'php/Header.php';
 include_once "php/Items.php";
 include_once "php/Database.php";
 $items = new Items();
-$itemsss = $items->getItemArray();
-echo $itemsss;
-?>
 
+?>
+<div class="background">
+    <div class="itemBox"><div class="innerBox"></div> <?php  $item2 = $items->getItemArray(1); ?></div>
+    </div>
 </body>
 </html>

@@ -18,8 +18,8 @@ body{
 .header{
     display:flex;
     overflow:hidden;
+    padding:10px 5px;
     background-color: #efabab;
-    padding: 30px 20px;
     width:100%;
 }
 
@@ -33,7 +33,7 @@ body{
     float:left;
     color:rebeccapurple;
     text-align:center;
-    padding:30px;
+    padding:10px;
     text-decoration:none;
     font-size: 26px;
     font-weight: bolder;
@@ -58,4 +58,29 @@ body{
 
     height:100%;
     width: auto;
+}
+
+/*Main stuff*/
+.background{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    background-color:mediumpurple;
+    color:white;
+}
+.itemBox{
+    display:flex;
+    justify-content:center;
+    background-color:lightpink;
+    height:270px;
+    width:480px;
+    flex-wrap: wrap;
+    margin:20px;
+
+}
+.innerBox{
+    height:80%;
+    width:100%;
 }

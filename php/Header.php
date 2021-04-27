@@ -1,10 +1,11 @@
 <html>
+<link rel="stylesheet" href="../StyleSheet/stylesheet.css">
 <?php
 include "php/Wallet.php";
 
 $wallet = new Wallet();
 ?>
-<style>@import "../StyleSheet/stylesheet.css";</style>
+
 <div class="header">
     <div class="header-left">
         <a class="pagebutton" href="Index.php">Store</a>
