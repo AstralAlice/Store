@@ -8,10 +8,17 @@ if(!isset($_SESSION["loggedin"]))
 
 <head>
 
+
+
 </head>
 <body>
 <?php
 require 'php/Header.php';
+include_once "php/Items.php";
+include_once "php/Database.php";
+$items = new Items();
+$itemsss = $items->getItemArray();
+echo $itemsss;
 ?>
 
 </body>
