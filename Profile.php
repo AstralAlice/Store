@@ -13,6 +13,6 @@ if(!isset($_SESSION["loggedin"]))
 <?php
 require 'php/Header.php';
 ?>
-
+<a href="Logout.php"><h2>Logout</h2></a>
 </body>
 </html>
