@@ -22,7 +22,7 @@ public function getItemArray($id)
             echo "Failed to run query: ";
         }
     while($row = $res->fetch(PDO::FETCH_ASSOC)){
-        echo $row["Name"] . ", " . $row["Price"];
+        echo $row["Name"] . "      €" . $row["Price"];
     }
 }
 }

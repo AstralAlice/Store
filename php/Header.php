@@ -10,6 +10,8 @@ $wallet = new Wallet();
     <div class="header-left">
         <a class="pagebutton" href="Index.php">Store</a>
         <a class="pagebutton" href="Profile.php">Profile</a>
+        <br><br>
+        <a class="title"">Cursed Plush Store</a>
     </div>
     <div class="header-right">
         <a class="pagebutton" id="topUpButton" href="TopUp.php">Balance=

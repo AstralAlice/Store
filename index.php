@@ -21,7 +21,11 @@ $items = new Items();
 
 ?>
 <div class="background">
-    <div class="itemBox"><div class="innerBox"></div> <?php  $item2 = $items->getItemArray(1); ?></div>
+    <div class="itemBox"><div class="innerBox" style="background-image:url('Img/nana.png')"></div> <?php  $item2 = $items->getItemArray(1); ?></div>
+
+    <div class="itemBox"><div class="innerBox" style="background-image:url('Img/him.png')"></div> <?php  $item2 = $items->getItemArray(2); ?></div>
+
+    <div class="itemBox"><div class="innerBox" style="background-image:url('Img/hom.png')"></div> <?php  $item2 = $items->getItemArray(3); ?></div>
     </div>
 </body>
 </html>

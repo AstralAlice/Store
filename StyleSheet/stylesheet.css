@@ -28,6 +28,13 @@ body{
     color:rebeccapurple;
     text-align: center;
 }
+.title{
+    color:white;
+    padding-left:400px;
+    font-size: 40px;
+    font-weight: bolder;
+    line-height: 30px;
+}
 
 .header .pagebutton , header > .pagebutton:visited{
     float:left;
@@ -75,9 +82,12 @@ body{
     justify-content:center;
     background-color:lightpink;
     height:270px;
-    width:480px;
+    width:430px;
     flex-wrap: wrap;
     margin:20px;
+    font-size: 40px;
+    font-family: "Comic Sans MS", sans-serif;
+    color:black;
 
 }
 .innerBox{
