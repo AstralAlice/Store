@@ -6,6 +6,8 @@
 
 </head>
 <body>
+
+    <form>
     <label for="email">Email</label>
     <input type="email" placeholder="Type Here" name="email"><br>
 
@@ -22,6 +24,20 @@
     <input type="text" placeholder="Type Here" name="lastname"><br>
 
     <input type="submit" value="sign up" name="submit">
+    </form>
+    <?php
+    if (isset($_REQUEST["submit"])){
+    $usname = $_REQUEST['username'];
+    $uspassword = $_REQUEST['password'];
+    $usfirstname= $_REQUEST['firstname'];
+    $uslastname= $_REQUEST['lastname'];
+    $usemail= $_REQUEST['email'];
+
+
+    include_once "php/user.php";
+    $user = new user();
+    $user->createAccount($usname, $uspassword,$usemail, $usfirstname,$uslastname);
+    }?>
 
 </body>
 </html>
