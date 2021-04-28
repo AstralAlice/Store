@@ -21,11 +21,24 @@ $items = new Items();
 
 ?>
 <div class="background">
-    <div class="itemBox"><div class="innerBox" style="background-image:url('Img/nana.png')"></div> <?php  $item2 = $items->getItemArray(1); ?></div>
+    <div class="itemBox"><div class="innerBox" style="background-image:url('Img/nana.png')"></div> <?php  $item2 = $items->getItemArray(1); ?><form><input type="submit" value="Purchase" name="submit"></form></div>
 
-    <div class="itemBox"><div class="innerBox" style="background-image:url('Img/him.png')"></div> <?php  $item2 = $items->getItemArray(2); ?></div>
+    <div class="itemBox"><div class="innerBox" style="background-image:url('Img/him.png')"></div> <?php  $item2 = $items->getItemArray(2); ?><form><input type="submit" value="Purchase" name="submit"></form></div>
 
-    <div class="itemBox"><div class="innerBox" style="background-image:url('Img/hom.png')"></div> <?php  $item2 = $items->getItemArray(3); ?></div>
-    </div>
+    <div class="itemBox"><div class="innerBox" style="background-image:url('Img/hom.png')"></div> <?php  $item2 = $items->getItemArray(3); ?><form><input type="submit" value="Purchase" name="submit"></form></div>
+
+<?php
+if (isset($_REQUEST["submit"])) {
+
+include_once "php/Transaction.php";
+include_once "php/user.php";
+$account = new user();
+$accountID = $account->getAccountID($_SESSION["username"]);
+$transaction = new Transaction();
+$transaction->Transact(10, $accountID);
+    header("location:complete.php");
+}
+?>
+</div>
 </body>
 </html>

@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<link rel="stylesheet" href="../StyleSheet/stylesheet.css">
 
 <head>
 
 </head>
 <body>
-
+<div class="background">
+    <div class="itemBox">
+        <h3>Sign Up</h3>
     <form>
     <label for="email">Email</label>
     <input type="email" placeholder="Type Here" name="email"><br>
@@ -25,6 +27,7 @@
 
     <input type="submit" value="sign up" name="submit">
     </form>
+        <a href ="Login.php">Already have an account? Click here to login</a>
     <?php
     if (isset($_REQUEST["submit"])){
     $usname = $_REQUEST['username'];
@@ -38,6 +41,6 @@
     $user = new user();
     $user->createAccount($usname, $uspassword,$usemail, $usfirstname,$uslastname);
     }?>
-
+</div></div>
 </body>
 </html>

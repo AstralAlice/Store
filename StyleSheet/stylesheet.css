@@ -68,6 +68,24 @@ body{
 }
 
 /*Main stuff*/
+.back{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap:wrap;
+    background-color:black;
+    color:darkred;
+    font-family: "Comic Sans MS", sans-serif;
+}
+.backk{
+    width:100%;
+    height:100%;
+    color:darkred;
+    background: black;
+}
+
 .background{
     width:100%;
     height:100%;
@@ -77,6 +95,8 @@ body{
     background-color:mediumpurple;
     color:white;
 }
+
+
 .itemBox{
     display:flex;
     justify-content:center;
@@ -88,6 +108,7 @@ body{
     font-size: 40px;
     font-family: "Comic Sans MS", sans-serif;
     color:black;
+
 
 }
 .innerBox{
