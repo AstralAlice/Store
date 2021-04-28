@@ -89,7 +89,7 @@ class user
             if ($res->execute()) {
                 while ($row = $res->fetch(PDO::FETCH_ASSOC))
                 {
-                    echo $row["User_ID"];
+
                     return $row['User_ID'];
 
                 }

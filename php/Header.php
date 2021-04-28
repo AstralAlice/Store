@@ -18,6 +18,15 @@ $wallet = new Wallet();
             <?php
             include_once "php/user.php";
             include_once "php/Wallet.php";
-            ?></a>
+            include_once "php/user.php";
+            include_once "php/Wallet.php";
+            include_once "php/TopUp.php";
+            $topUp = new TopUp();
+            $account = new user();
+            $wallet = new Wallet();
+            $accountID = $account->getAccountID($_SESSION["username"]);
+            $bal =$wallet->getBalance($accountID);
+            echo $bal;
+            ?><br>Top Up</a>
     </div>
 </div>
