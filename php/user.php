@@ -77,8 +77,27 @@ class user
 
     }
 
-    public function getAccountID($username){}
+    public function getAccountID($username)
+    {
+        include_once "php/Database.php";
+        $db = new Database();
+        $link = $db->dbConnect();
 
+        $sql = "select * from user where Username = '$username'";
+
+        if ($res = $link->prepare($sql)) {
+            if ($res->execute()) {
+                while ($row = $res->fetch(PDO::FETCH_ASSOC))
+                {
+                    echo $row["User_ID"];
+                    return $row['User_ID'];
+
+                }
+
+
+            }
+        }
+    }
 
     public function getUsername()
     {
